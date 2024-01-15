@@ -1,66 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-</style>
-  <style>
-  body {
-    overflow: hidden;
-  }
-  #titlemain {
-      top: 46%;
-      position: absolute;
-      font-family: "Nunito";
-      transform: translateY(1000%);
-      width: 99%;
-      display: flex;
-      justify-content: center;
-      align-items: center
-      perspective: 1000px;
-      perspective-origin: 50% 50%;
-      -webkit-transform: translateY(1000%);
-}
-#subtitle {
-      top: 50%;
-      position: absolute;
-      font-family: "Nunito";
-      transform: translateY(1000%);
-      width: 99%;
-      display: flex;
-      justify-content: center;
-      align-items: center
-      perspective: 1000px;
-      perspective-origin: 50% 50%;
-      -webkit-transform: translateY(1000%);
-      font-size: 24px;
-      font-weight: 200;
-      animation-delay: 3s;
-}  
-  .slide-in {
-      animation: slide-in 2.6s forwards;
-      -webkit-animation: slide-in 2.6s forwards;
-  }
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by iFlxy</title>
+  <link rel="stylesheet" href="./style.css">
 
-  @keyframes slide-in {
-      100% { transform: translateY(-50%); }
-  }
-
-  @-webkit-keyframes slide-in {
-      100% { -webkit-transform: translateY(-50%); }
-  }
-
-  </style>
 </head>
 <body>
-  <div id="titlemain" class="slide-in">
-    <h2 id="kcxd">iflxy.xyz is under construction</h2>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script src="https://kit.fontawesome.com/f12ee7b0a2.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<div id="overlay">
+  <div class="title-container">
+    <img src="https://avatars.githubusercontent.com/u/102528232?v=4" alt="Round Image" class="round-image">
+    <p class="title">iFlxy</p>
+    <p class="subtitle" id="tobj">Professional Skid</p>
   </div>
-  <div id="subtitle" class="slide-in">
-    <p id="kcxd">Come back later</p>
+  
+  <div class="bottom-section">
+    <p class="below-title">About Me:</p>
+    <p class="regular-text">Pronouns » she/her/her/her’s/herself</p>
+    <p class="regular-text">Typology » INFJ (NiFe) 5w6 528 sx/so RLOAI LEFV Phlegmatic-Melancholic</p>
+    <br>
+    <p class="regular-text" id="lastline">Hi! I'm Amelia, I'm from Poland and I like video games, listening to J-Pop (and other music that's similar to J-Pop songs I like) and programming (even though I'm sometimes too lazy to do everything myself and in the correct way, for example: this website. Don't look at the CSS, it's a mess, but it works). I like to mess around with technology in weird, yet interesting (atleast for me) ways in my free time. I honestly have no clue what to write here, so I think it's a perfect moment to tell everyone reading this that I'm autistic, transgender and also have a psychosis (and probably schizophrenia according to my therapists and psychiatrists). I hope I didn't scare you away (I probably did). Feel free to contact me on Discord if you still want to be in any way associated with me. I like to hang out with equally weird people.</p>
   </div>
+  <div class="social-media">
+      <a><i class="fa-brands fa-discord" id="social-button"></i></a>
+      <a href="https://www.tiktok.com/@igniflxy"><i class="fa-brands fa-tiktok" id="social-button"></i></a>
+      <a href="https://www.youtube.com/channel/UChfkOrffkuDKj3ZIbyYnAsw"><i class="fa-brands fa-youtube" id="social-button"></i></a>
+  </div>
+</div>
+</div>
+<div class="small-button"><a class="small-text">Credits</a>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>

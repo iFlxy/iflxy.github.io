@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('https://cdn.nest.rip/uploads/36094eb2-b29e-435d-82b0-d8b4d7a1f198.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes scaleAnimationMobile {
+  from {
+    transform: translate(-50%, 0) scale(0);
+  }
+  to {
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+#overlay {
+    animation: scaleAnimation 2s ease forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 940px;
+    height: 600px;
+    background-color: rgba(70,70,90,0.2);
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.title-container {
+  margin-top: 24px;
+  position: relative;
+}
+
+.round-image {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  margin-top: 13px;
+  margin-left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    font-family: 'Exo 2';
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    position: sticky;
+    margin-left: 210px;
+    text-align: left;
+}
+
+.subtitle {
+    font-family: 'Exo 2';
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    position: sticky;
+    margin-left: 210px;
+    text-align: left;
+}
+
+.bottom-section {
+  margin-top: 24px;
+  position: relative;
+}
+
+
+.below-title {
+    font-family: 'Exo 2';
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 72px;
+    margin-bottom: 4px;
+    position: sticky;
+    left: 0;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.regular-text {
+    font-family: 'Exo 2';
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+}
+
+#social-button {
+    font-family: 'Exo 2', FontAwesome;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: sticky;
+    margin-right: 0px;
+    text-align: right;
+    right: 0;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.social-media {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin-bottom: 36px;
+    margin-right: 42px;
+    float: right;
+    display: flex;
+}
+
+.small-button {
+    font-family: 'Exo 2';
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #ADADAD;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.small-text {
+    font-family: 'Exo 2';
+    font-weight: 500;
+    color: #ADADAD;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1080px) {
+    body {
+        overflow: visible;
+        padding-bottom: 20px;
+    }
+
+    #overlay {
+        animation: scaleAnimationMobile 2s ease forwards;
+        width: 87%;
+        height: 985px;
+        top: 20px;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: absolute;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .round-image {
+        width: 40%;
+        height: auto;
+        margin: 0;
+        position: static;
+        transform: none;
+    }
+
+    #social-button {
+        margin: 12px;
+    }
+    
+  .small-text {
+        display: none;
+  }
+  
+  #lastline {
+        padding-bottom: 154px;
+  }
+}
