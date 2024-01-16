@@ -4,8 +4,8 @@ body {
     overflow: hidden;
     height: 100vh;
     justify-content: center;
-    background-image: url('https://cdn.nest.rip/uploads/36094eb2-b29e-435d-82b0-d8b4d7a1f198.jpg');
-    background-size: cover;
+    background-image: url('https://cdn.nest.rip/uploads/36094eb2-b29e-435d-82b0-d8b4d7a1f198.jpg') no-repeat;
+    background-size: 100%;
     background-position: center;
 }
 
