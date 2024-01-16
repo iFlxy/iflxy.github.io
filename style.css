@@ -175,7 +175,7 @@ body {
     #overlay {
         animation: scaleAnimationMobile 2s ease forwards;
         width: 87%;
-        height: 1100px;
+        height: 1200px;
         top: 20px;
         bottom: 20px;
         left: 50%;
