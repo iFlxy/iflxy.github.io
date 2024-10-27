@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dvdhqa32nb8ee"]
+
+[ext_resource type="Shader" path="res://stars.gdshader" id="1_510sj"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_510sj")
+shader_parameter/flare = 2.0
+shader_parameter/mouse_position = null
+shader_parameter/NUM_LAYERS = 10.0
+shader_parameter/overlay_alpha = 0.375
