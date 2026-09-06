@@ -8,13 +8,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if visible:
+	if !%CenterContainer.visible:
 		if Input.is_action_just_pressed("Back"):
 			_on_pressed()
 
 
 func _on_pressed() -> void:
-	%AudioStreamPlayer.playsound(%AudioStreamPlayer.PRESS_SOUND)
+	%AudioStreamPlayer.play()
 	%CenterContainer.visible = true
 	%CenterContainer2.visible = false
 	%CenterContainer3.visible = false

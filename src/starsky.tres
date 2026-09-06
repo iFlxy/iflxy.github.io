@@ -1,11 +1,15 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dvdhqa32nb8ee"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dvdhqa32nb8ee"]
 
-[ext_resource type="Shader" path="res://stars.gdshader" id="1_510sj"]
+[ext_resource type="Shader" uid="uid://dkuplkck24pn0" path="res://stars.gdshader" id="1_510sj"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_510sj")
-shader_parameter/flare = 2.0
-shader_parameter/mouse_position = null
-shader_parameter/NUM_LAYERS = 10.0
-shader_parameter/overlay_alpha = 0.375
+shader_parameter/sky_color = Color(0.02, 0.04, 0.12, 1)
+shader_parameter/aurora_a = Color(0.2, 1, 0.55, 1)
+shader_parameter/aurora_b = Color(0.4, 0.3, 1, 1)
+shader_parameter/speed = 0.2930000139175
+shader_parameter/band_scale = 2.3710000888725
+shader_parameter/intensity = 1.5
+shader_parameter/vertical_falloff = 2.0
+shader_parameter/visibility = 0.0

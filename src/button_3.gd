@@ -10,6 +10,6 @@ func _process(delta: float) -> void:
 			_on_pressed()
 
 func _on_pressed() -> void:
-	%AudioStreamPlayer.playsound(%AudioStreamPlayer.PRESS_SOUND)
+	%AudioStreamPlayer.play()
 	%CenterContainer.visible = false
 	%CenterContainer3.visible = true

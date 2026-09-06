@@ -15,8 +15,7 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	%AudioStreamPlayer.playsound(%AudioStreamPlayer.PRESS_SOUND)
-	if OS.has_feature('JavaScript'):
-		JavaScriptBridge.eval("""
-			window.open('https://www.youtube.com/@iFlxy', '_blank').focus();
-		""")
+	%AudioStreamPlayer.play()
+	JavaScriptBridge.eval("""
+		window.open('https://www.youtube.com/@iFlxy', '_blank').focus();
+	""")
